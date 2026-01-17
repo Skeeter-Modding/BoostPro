@@ -1,0 +1,44 @@
+# Build outputs - don't share compiled binaries
+bin/
+obj/
+publish/
+installer_output/
+
+# Visual Studio / IDE files
+.vs/
+*.user
+*.suo
+*.cache
+*.log
+UpgradeLog.htm
+
+# Debug files
+*.pdb
+
+# Temporary files
+*.tmp
+*~
+nul
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Backup files
+*.bak
+*.backup
+Backup/
+
+# Claude Code internal files
+.claude/
+
+# Old/unused project files
+BoostPro.csproj
+BoostPro.sln
+BoostProRestore.csproj
+Program.cs
+Restore.cs
+
+# Build scripts (keep these private)
+build.ps1
+create-icon.ps1

@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>BoostProUI</AssemblyName>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+
+    <!-- App Icon -->
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+
+    <!-- Assembly Info -->
+    <Product>BoostPro</Product>
+    <Company>Triple Threat Tactical Gaming Community</Company>
+    <Authors>Skeeter</Authors>
+    <Description>Windows Gaming Optimizer - Free up RAM and CPU for gaming. Created by Skeeter from Triple Threat Tactical Gaming Community.</Description>
+    <Copyright>Copyright © 2025 Skeeter - Triple Threat Tactical Gaming Community</Copyright>
+    <Version>1.0.0</Version>
+    <FileVersion>1.0.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="9.0.0" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Management" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="MainForm.cs" />
+  </ItemGroup>
+
+</Project>
